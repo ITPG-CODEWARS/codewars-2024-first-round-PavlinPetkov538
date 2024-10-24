@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Купи билет</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="about.html">Информация за сайта</a></li>
+                <li><a href="contact.html">Контакт</a></li>
+                <li><a href="buyticket.html">Купи билет</a></li>
+                <li><a href="route.html">Маршрут</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Купи билет</h1>
+        
+        <form id="route-form">
+            <label for="from">Изберете маршрут:</label>
+            <select id="route" name="route">
+                <option value="">Изберете маршрут</option>
+                <option value="София-Кърджали">София - Кърджали</option>
+                <option value="Пловдив-Благоевград">Пловдив - Благоевград</option>
+                <option value="Варна-София">Варна - София</option>
+                <option value="Бургас-Пловдив">Бургас - Пловдив</option>
+                <option value="Русе-Варна">Русе - Варна</option>
+                <option value="Сливен-Плевен">Сливен-Плевен</option>
+            </select>
+            
+            <label for="date">Дата на пътуване:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <button type="submit">Търси</button>
+        </form>
+
+        <button id="buy-ticket-button">Купи билета</button>
+
+        <section id="results">
+            <h2>Резултати</h2>
+            <div id="schedule"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Любителски уебсайт за влакове</p>
+    </footer>
+</body>
+</html>
